@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/post/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/post-detail/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
+  }
+}

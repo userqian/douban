@@ -1,0 +1,15 @@
+<!--pages/movie/movie.wxml-->
+<view class='content'>
+  <view class='search-box'>
+    <icon class='icon' type='search' size='16'></icon>
+    <input type='text' placeholder='输入电影名称' placeholder-class='placeholder' bindinput='bindSearch'></input>
+    <text class='none'>取消</text>
+  </view>
+  <view>
+    <block wx:for='{{movieList}}' wx:key='{{index}}'>
+      <view>
+        {{item.title}}
+      </view>
+    </block>
+  </view>
+</view>

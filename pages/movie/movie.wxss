@@ -1,0 +1,26 @@
+/* pages/movie/movie.wxss */
+.search-box{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 30rpx;
+}
+.search-box .icon{
+  margin-right: 50rpx;
+  padding-top: 10rpx;
+  color: #333;
+}
+.search-box input{
+  color: #333;
+}
+.placeholder{
+  color: #333;
+  font-size: 14px;
+}
+.search-box .none{
+  flex: 1 0 0;
+  text-align: center;
+  color: #cdcdcd;
+  font-size: 16px;
+}

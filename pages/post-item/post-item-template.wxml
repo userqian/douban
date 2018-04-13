@@ -1,0 +1,17 @@
+<template name='item'>
+  <view class='top'>
+    <image src='{{avatar}}' class='headImg'></image>
+    <text class='data'>{{data}}</text>
+  </view>
+  <view class='content'>
+    <text class='title'>{{title}}</text>
+    <image class='img' src='{{img}}'></image>
+    <text class='info'>{{desc}}</text>
+  </view>
+  <view class='bottom'>
+    <image class='icon' src='/images/icon/chat1.png'></image>
+    <text class='number chat'>{{chat}}</text>
+    <image class='icon' src='/images/icon/view.png'></image>
+    <text class='number view'>{{view}}</text>
+  </view>
+</template>
