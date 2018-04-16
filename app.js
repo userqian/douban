@@ -36,6 +36,8 @@ App({
   globalData: {
     userInfo: null,
     doubanBase:"http://localhost",
-    searchURL:'/v2/movie/search?q='
+    searchURL:'/v2/movie/search?q=',
+    hotMovie: '/v2/movie/in_theaters',
+    comingMovie: '/v2/movie/coming_soon'
   }
 })

@@ -5,10 +5,16 @@
     <input type='text' placeholder='输入电影名称' placeholder-class='placeholder' bindinput='bindSearch'></input>
     <text class='none'>取消</text>
   </view>
-  <view>
+  <view class='movie-box'>
     <block wx:for='{{movieList}}' wx:key='{{index}}'>
-      <view>
-        {{item.title}}
+      <view class='movie-list'>
+        <view class='pic'>
+          <image src='{{item.image}}'></image>
+        </view>
+        <view class='info'>
+          <text class='name'>{{item.title}}</text>
+          <text class='desc'>{{item.movieInfo}}</text>
+        </view>
       </view>
     </block>
   </view>

@@ -1,4 +1,4 @@
-/* pages/movie/movie.wxss */
+/* pages/home/home.wxss */
 .search-box{
   width: 100%;
   height: 60rpx;
@@ -22,5 +22,8 @@
   flex: 1 0 0;
   text-align: center;
   color: #cdcdcd;
+  font-size: 16px;
+}
+.session-header{
   font-size: 16px;
 }

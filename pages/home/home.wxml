@@ -1,0 +1,20 @@
+<!--pages/home/home.wxml-->
+<view class='content'>
+  <view class='search-box' bindtap='search'>
+    <icon class='icon' type='search' size='16'></icon>
+    <input type='text' placeholder-class='placeholder'></input>
+  </view>
+  <view class='page-session'>
+    <view class='session-header'>
+      <text class='header-title'>影院热映</text>
+      <text class='header-more'>更多 > </text>
+    </view>
+    <view class='session-content'>
+      <scroll-view scroll-x>
+        <block wx:for='{{hotList}}' wx:key='{{index}}'>
+          <template></template>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>
