@@ -1,0 +1,28 @@
+@import "/pages/rating-star/index.wxss";
+.movie-wrapper{
+  margin:0 10rpx; 
+  display: inline-block;
+}
+.movie-item{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  width: 200rpx;
+}
+.pic{
+   width: 200rpx;
+   height: 280rpx; 
+}
+.name{
+  width: 200rpx;
+  color: #4a4a4a;
+  font-size: 28rpx;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.number{
+  font-size: 26rpx;
+}

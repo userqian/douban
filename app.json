@@ -5,11 +5,15 @@
     "pages/post/index",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/post-detail/index"
+    "pages/post-detail/index",
+    "pages/movie-grid/index",
+    "pages/rating-star/index",
+    "pages/more-movie/index"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTextStyle":"black"
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#405f80",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle": "white"
   }
 }

@@ -1,0 +1,7 @@
+<!--pages/rating-star/index.wxml-->
+<template name='ratingStar'>
+  <view class='rating'>
+    <view class='star allStar{{rating.average || 0}}'></view>
+    <text class='score'>{{rating.average}}</text>
+  </view>
+</template>

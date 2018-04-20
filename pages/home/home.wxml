@@ -1,4 +1,5 @@
 <!--pages/home/home.wxml-->
+<import src='../movie-grid/index.wxml'/>
 <view class='content'>
   <view class='search-box' bindtap='search'>
     <icon class='icon' type='search' size='16'></icon>
@@ -7,14 +8,27 @@
   <view class='page-session'>
     <view class='session-header'>
       <text class='header-title'>影院热映</text>
-      <text class='header-more'>更多 > </text>
+      <text class='header-more' bindtap='more' id='moreMovie'>更多 > </text>
     </view>
     <view class='session-content'>
-      <scroll-view scroll-x>
-        <block wx:for='{{hotList}}' wx:key='{{index}}'>
-          <template></template>
-        </block>
-      </scroll-view>
+        <scroll-view scroll-x class='scroll'>  
+          <block wx:for='{{hotList}}' wx:key='{{index}}'>
+            <template is='movie-grid' data='{{...item}}'></template>
+          </block>
+        </scroll-view>  
+    </view>
+  </view>
+  <view class='page-session'>
+    <view class='session-header'>
+      <text class='header-title'>即将热映</text>
+      <text class='header-more' bindtap='more' id='comingMovie'>更多 > </text>
+    </view>
+    <view class='session-content'>
+        <scroll-view scroll-x class='scroll'>  
+          <block wx:for='{{comingList}}' wx:key='{{index}}'>
+            <template is='movie-grid' data='{{...item}}'></template>
+          </block>
+        </scroll-view>  
     </view>
   </view>
 </view>
